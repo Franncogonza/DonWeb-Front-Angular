@@ -17,14 +17,15 @@ export class BaseService {
 
   addProduct(plan, periodoo): Observable<any> {
     let llamada = `plan=${plan}&periodo=${periodoo}`;
-    return this.http.get(this.url +'agregarItem.php?'+ llamada);
+    return this.http.get(this.url + 'agregarItem.php?' + llamada);
   }
 
   shoppingCart(): Observable<any> {
     return this.http.get(this.url + 'getListadoCarrito.php');
   }
 
-  deleteProduct(id_producto :number): Observable<any> {
+  //coloque un get porque no tengo permiso para delete
+  deleteProduct(id_producto): Observable<any> {
     let llamada = `id_producto=${id_producto}`;
     return this.http.get(this.url + 'removerItem.php?' + llamada);
   }

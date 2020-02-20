@@ -1,0 +1,95 @@
+.container {
+    height: 100%;
+    max-width: 1000px;
+}
+
+.row {
+    height: 100%;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    font-size: 2.3em;
+    margin-bottom: 1em;
+}
+
+h1 strong,
+h2 strong {
+    font-weight: 600
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1em;
+}
+
+p strong {
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.btn-cta {
+    color: #6c757d;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-top: 2em;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+    display: inline-block;
+    transition: .2s all;
+}
+
+.btn-cta:hover {
+    background-color: #6c757d;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #363a43;
+    height: 60px;
+}
+
+header {
+    background-image: url('src/assets/img/header-bg.jpg'); 
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+section {
+    padding: 5em 0;
+}
+
+footer {
+    background-color: #1e1e1e;
+    height: 200px;
+}
+
+.LogoNav {
+    /* width: 18%; */
+    width: 200px;
+    height: auto;
+    margin: 1.8% auto;
+}
+
+.LogoFooter {
+    /* width: 18%; */
+    width: 200px;
+    height: auto;
+    margin: 10.3% auto;
+}
+
+.LogoGoogleNegocio {
+    width: 25%;
+    height: auto;
+    margin: 4.3% auto;
+}
