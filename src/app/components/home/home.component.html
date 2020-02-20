@@ -19,7 +19,10 @@
   <header>
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6">
+        <div class="col-md-5" style="
+        -webkit-box-flex: 0;
+        flex: 0 0 41.666667%;
+        max-width: 78.666667%; z-index: 1;">
           <div>
             <img src=" assets/img/googleNegocio.png" alt="" class="LogoGoogleNegocio" />
           </div>
@@ -32,11 +35,18 @@
             información relevante. Tu negocio se destacará cuando busquen tu empresa o rubro.
           </p>
         </div>
+        <div class="col-md-7">
+          <img src="assets/img/header-desktop.png" alt="" class="header-desktop">
+            <img src="assets/img/header-mobile.png" class="phone" alt="">  
+            <img src="assets/img/header-mobile-content-1.jpg" class="phone-content" alt="">    
+        </div>
       </div>
+
     </div>
+
   </header>
 
-  <section>
+  <section class="gradiente">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
@@ -105,21 +115,24 @@
             de tu empresa en <strong>Google Mi Negocio </strong> de forma gratuita.</p>
           <a [routerLink]="['/carrito']" routerLinkActive="router-link-active" class="btn btn-success mt-3 p-3"
             style="font-size: 1rem;"> COMIENZA HOY</a>
+            <div>
+              <img src="assets/img/footer-desktop.png" alt="" class="img-fluid mt-5 footer-desktop">
+              <img src=" assets/img/footer-mobile.png " alt=" " class="mobile-footer"/>
+          </div>
 
         </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="container ">
-      <img src=" assets/img/donWeb.png " alt=" " class="LogoFooter " />
+  <footer >
+    <div class="container" style="margin-top: -8%;">
+      <img src=" assets/img/donWeb.png " alt=" " class="LogoFooter "/>
     </div>
   </footer>
 
   <!-- <script src="assets/js/thirdparty/jquery.3.3.1.min.js "></script> -->
   <!-- <script src="assets/js/index.js "></script> -->
 </body>
+
 </html>
-
-

@@ -59,10 +59,12 @@ nav {
 }
 
 header {
-    background-image: url('src/assets/img/header-bg.jpg'); 
+    background-image: url('src/assets/img/header-bg.jpg');
+    min-height: 250px;;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 89vh;
+    z-index: 1;
 }
 
 section {
@@ -74,16 +76,8 @@ footer {
     height: 200px;
 }
 
-.LogoNav {
-    /* width: 18%; */
-    width: 200px;
-    height: auto;
-    margin: 1.8% auto;
-}
-
 .LogoFooter {
-    /* width: 18%; */
-    width: 200px;
+    width: 25%;
     height: auto;
     margin: 10.3% auto;
 }
@@ -92,4 +86,45 @@ footer {
     width: 25%;
     height: auto;
     margin: 4.3% auto;
+}
+
+/* .gradiente{
+    background: linear-gradient(to bottom, rgba(255, 255, 255), rgb(255, 255, 255));
+    position: relative;
+} */
+
+.phone{
+    z-index: 3;
+    margin-top: -45%;
+    width: 30%;
+    margin-left: 74%;
+}
+
+.header-desktop{
+    width: 120%;
+    height: 200%;
+    margin-top: 20%;
+    z-index: 2;
+}
+
+.phone-content{
+    width: 24%;
+    z-index: 4;
+    margin-top: -64%;
+    margin-left: 77%;
+}
+
+
+.footer-desktop{
+    width: 80%!important;
+    /* top: 30px;
+    left: 10px; */
+    z-index: 1;
+}
+
+.mobile-footer{
+    width:26%!important;
+  margin-right: 80%;
+  z-index: 2;
+  margin-top: -35%;
 }
