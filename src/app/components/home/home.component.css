@@ -1,4 +1,4 @@
-/* @media (min-width: 1000px) { */
+
 .container {
     height: 100%;
     max-width: 1000px;
@@ -98,9 +98,8 @@ footer {
 }
 
 /* .gradiente{
-    background: linear-gradient(to bottom, rgba(255, 255, 255), rgb(255, 255, 255));
-    position: relative;
-} */
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255), rgb(255, 255, 255));
+    position: relative; */
 
 .phone{
     position: absolute;
@@ -113,16 +112,16 @@ footer {
 .header-desktop{
     width: 120%!important;
     position: absolute;
-    top: 0px;
+    top: 31px;
     left: 0px;
     z-index: 2;
-    height: 123%;
+    height: 115%;
 }
 
 .phone-content{
     position: absolute;
     top: 260px;
-    right: 37px;
+    right: 38px;
     width: 24%;
     z-index: 4;
 }
@@ -143,4 +142,85 @@ footer {
     width:26%!important;
     z-index: 2;
 }
-    /* } */
+
+.mobile-googleNegocio{
+    margin-block-start: auto;
+}
+
+.footer-mobile{
+    background-color: #007bff; 
+    padding-bottom: 0px!important;
+}
+
+.footer-blue{
+    position: relative; height: 450px;
+}
+
+/* mobile =============================================================================================================================================== 
+*/
+@media (max-width: 575.98px) { 
+        
+    .phone{
+        position: absolute;
+        top: 73px;
+        right: 32px;
+        z-index: 3;
+        width: 45%;
+    }
+    
+    .header-desktop{
+        width: 95%!important;
+        position: relative;
+        top: 23px;
+        left: 15px;
+        z-index: 2;
+        height: 96%;
+    }
+    
+    .phone-content{
+        position: absolute;
+        top: 114px;
+        right: 48px;
+        width: 36%;
+        z-index: 4;
+}
+
+.mobile-googleNegocio{
+    margin-top: 10%!important;
+}
+
+.footer-blue{
+    position: relative;
+    max-height: 193px!important;
+}
+
+.LogoFooter {
+    width: 50%;
+    height: auto;
+    margin: 17%auto;
+    margin-left: inherit;
+}
+
+header {
+    background-image: url('src/assets/img/header-bg.jpg');
+    min-height: 250px;;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    z-index: 1;
+}
+
+.gradiente{
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255), rgb(255, 255, 255));
+    position: relative; */
+   padding: 1em!important;
+} 
+
+h1,h2{
+font-weight: 300;
+font-size: 1.3em;
+margin-bottom: 1em;
+}
+    }
+    
+    

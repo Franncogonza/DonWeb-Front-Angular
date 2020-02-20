@@ -19,7 +19,16 @@
   <header>
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-5 col-5" style="margin-block-start: auto">
+<!-- se muestra en mobile -->
+        <div class="col-md-7 col-12 d-block d-sm-none" style="height: 400px;">
+          <img src="assets/img/header-desktop.png" alt="" class="header-desktop">
+          <div>
+          <img src="assets/img/header-mobile.png" class="phone" alt="">  
+          <img src="assets/img/header-mobile-content-1.jpg" class="phone-content" alt="">
+          </div> 
+        </div>
+<!--  -->
+        <div class="col-md-5 col-12 mobile-googleNegocio" >
           <div>
             <img src=" assets/img/googleNegocio.png" alt="" class="LogoGoogleNegocio" />
           </div>
@@ -32,27 +41,31 @@
             información relevante. Tu negocio se destacará cuando busquen tu empresa o rubro.
           </p>
         </div>
-        <div class="col-md-7 col-7" style="height: 400px;">
+<!-- se oculta en mobile -->
+        <div class="col-md-7 col-12 d-none d-sm-block" style="height: 400px;">
             <img src="assets/img/header-desktop.png" alt="" class="header-desktop">
             <div>
             <img src="assets/img/header-mobile.png" class="phone" alt="">  
             <img src="assets/img/header-mobile-content-1.jpg" class="phone-content" alt="">
             </div>    
         </div>
+        <!--  -->
       </div>
-
     </div>
 
   </header>
 
   <section class="gradiente">
     <div class="container">
+
       <div class="row align-items-center">
-        <div class="col-md-6 col-6">
+        
+        <!-- brinda info Hidden only on xs -->
+        <div class="col-md-6 col-12 d-none d-sm-block">
           <img src="assets/img/section-img-1.jpg" alt="Brinda información útil a tus clientes" />
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 col-12 d-none d-sm-block">
           <h2>
             Brinda información
             <br />
@@ -69,18 +82,49 @@
             al alcance de la mano de tus clientes.
           </p>
 
-          <a [routerLink]="['/carrito']" routerLinkActive="router-link-active" class="btn-cta">
+          <a class="col-sm-12" [routerLink]="['/carrito']" routerLinkActive="router-link-active" class="btn-cta">
             Comienza Hoy
           </a>
         </div>
       </div>
     </div>
+    <!-- fin -->
   </section>
 
   <section>
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6 col-6">
+        <!--  -->
+         <div class="col-md-6 col-12 d-block d-sm-none">
+          <img src="assets/img/section-img-1.jpg" alt="Brinda información útil a tus clientes" />
+        </div> 
+<!--  -->
+<div class="col-md-6 col-12 d-block d-sm-none">
+  <h2>
+    Brinda información
+    <br />
+    <strong>Útil a tus clientes</strong>
+  </h2>
+
+  <p>
+    Genera una experiencia de usuario superior, facilitando a tus clientes el contacto contigo y el acceso a
+    toda tu información en el momento preciso que la necesitan.
+  </p>
+
+  <p>
+    Con <strong>Google Mi Negocio,</strong> los datos de tu negocio (teléfono, horarios, dirección, etc.) estará
+    al alcance de la mano de tus clientes.
+  </p>
+
+  <a class="col-sm-12" [routerLink]="['/carrito']" routerLinkActive="router-link-active" class="btn-cta">
+    Comienza Hoy
+  </a>
+</div>
+
+<div class="col-md-6 col-12 d-block d-sm-none">
+  <img src="assets/img/section-img-2.jpg" alt="Brinda información útil a tus clientes" />
+</div>
+        <div class="col-md-6 col-12">
           <h2>
             Comparte novedades
             <br />
@@ -92,20 +136,22 @@
             sirve para lograr que aquellos que te encontraron, interactúen contigo.
           </p>
 
-          <a [routerLink]="['/carrito']" routerLinkActive="router-link-active" class="btn-cta">
+          <a class="col-12" [routerLink]="['/carrito']" routerLinkActive="router-link-active" class="btn-cta">
             Comienza Hoy
           </a>
         </div>
+<!--se oculta mobile  -->
 
-        <div class="col-md-6 col-6">
+        <div class="col-md-6 col-12 d-none d-sm-block">
           <img src="assets/img/section-img-2.jpg" alt="Brinda información útil a tus clientes" />
         </div>
       </div>
     </div>
   </section>
 
-  <section style="background-color: #007bff; padding-bottom: 0px!important;">
+  <section class="footer-mobile">
     <div class="container">
+    
       <div class="row align-items-center">
         <div class="text-center col-md-12 col-12">
           <h1 style="color: white; font-weight: 300;"><strong>Lo hacemos por ti</strong>
@@ -114,20 +160,21 @@
             de tu empresa en <strong>Google Mi Negocio </strong> de forma gratuita.</p>
           <a [routerLink]="['/carrito']" routerLinkActive="router-link-active" class="btn btn-success mt-3 p-3"
             style="font-size: 1rem;"> COMIENZA HOY</a>
-            <div style="position: relative; height: 450px;">
+            <div class="footer-blue">
               <img src="assets/img/footer-desktop.png" alt="" class="img-fluid mt-5 footer-desktop">
               <img src=" assets/img/footer-mobile.png " alt=" " class="mobile-footer"/>
           </div>
 
         </div>
       </div>
+
     </div>
   </section>
 
-  <footer >
+  <footer>
 <div class="row">
-    <div class="container col-md-6 col-6" style="margin-left: 14%;">
-      <img src=" assets/img/donWeb.png " alt=" " class="LogoFooter "/>
+    <div class="container col-md-6 col-12" style="margin-left: 14%;">
+      <img src=" assets/img/donWeb.png " alt=" " class="LogoFooter"/>
     </div>
     </div>
   </footer>

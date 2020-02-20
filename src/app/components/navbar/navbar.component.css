@@ -4,3 +4,12 @@
     margin-left: 12%;
     margin-top: 1%;
 }
+
+@media (max-width: 575.98px) { 
+    .LogoNav{
+  border-style: none;
+    margin-left: 0%;
+    margin-top: 3%;
+    }
+    
+} 
