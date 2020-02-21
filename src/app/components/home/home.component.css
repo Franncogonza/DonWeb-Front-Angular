@@ -220,6 +220,11 @@ font-size: 1.3em;
 margin-bottom: 1em;
 }
 
+.footer-blue{
+  position: relative;
+  height: 200px;
+}
+
 /* Animations */
 section,footer, .LogoGoogleNegocio {
     animation-duration: 2.8s;
@@ -410,6 +415,10 @@ section,footer, .LogoGoogleNegocio {
     margin: 10.3% auto;
     }
 
+.footer-blue{
+  position: relative;
+  height: 200px;
+}
     /* Animations */
 section,footer, .LogoGoogleNegocio {
     animation-duration: 2.8s;
