@@ -4,7 +4,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Animaciones */
-.animated {
+/* .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -30,4 +30,4 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   
   .fadeIn {
     animation-name: fadeIn;
-  }
+  } */
