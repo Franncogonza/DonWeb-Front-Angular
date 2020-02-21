@@ -313,7 +313,7 @@ margin: 10.3% auto;
 }
 
 /* Animations */
-section,footer, .LogoGoogleNegocio {
+/* section,footer, .LogoGoogleNegocio {
     animation-duration: 2.8s;
     animation-name: slidein;
     animation-iteration-count:infinite;
@@ -358,7 +358,7 @@ section,footer, .LogoGoogleNegocio {
         margin-top: 100%;
         width: 100%;
       }
-  }
+  } */
 
 }
 
