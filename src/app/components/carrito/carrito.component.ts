@@ -32,6 +32,8 @@ export class CarritoComponent implements OnInit {
   cartProduct: any;
   productData: any;
   deleteProd: any;
+  show: boolean = false;
+  carrito: boolean = false;
 
   constructor(
     private _baseService: BaseService,
@@ -43,12 +45,14 @@ export class CarritoComponent implements OnInit {
     this._baseService.getPlanes().subscribe(
       (res: any) => {
         this.planes = res.response.planes;
+        this.show = true;
         this.titleService = this.planes[0].nombre;
         this.valorPlan = this.planes[0].plan;
         this.periodos = this.planes[0].periodos;
       },
       (err) => {
         console.log(err);
+        this.show = false;
         this.openSnackBar("Error de comunicacion con el ws");
       });
   }
@@ -57,12 +61,14 @@ export class CarritoComponent implements OnInit {
     this._baseService.getPlanes().subscribe(
       (res: any) => {
         this.planes = res.response.planes;
+        this.show = true;
         this.titleService = this.planes[1].nombre;
         this.valorPlan = this.planes[1].plan;
         this.periodos = this.planes[1].periodos;
       },
       (err) => {
         console.log(err);
+        this.show = false;
         this.openSnackBar("Error de comunicacion con el ws");
       });
   }
@@ -91,6 +97,7 @@ export class CarritoComponent implements OnInit {
         this.productData = this.arrayProducts.find(result => result.id_producto == this.idProduct);
 
         if (this.productData) {
+          this.carrito = true;
           this.json = {
             'descripcion': this.productData.nombre,
             'plan': this.productData.plan,
@@ -101,6 +108,8 @@ export class CarritoComponent implements OnInit {
 
           this.renglonesTabla.push(this.json);
           this.dataSource = new MatTableDataSource(this.renglonesTabla);
+          this.openSnackBar("Producto agregado con éxito");
+
         } else {
           this.openSnackBar("Producto no disponible");
         }
@@ -126,6 +135,8 @@ export class CarritoComponent implements OnInit {
           }
         }
         this.dataSource = new MatTableDataSource(this.renglonesTabla);
+        this.openSnackBar("Ha quitado el producto del carrito");
+
       },
       (err) => {
         console.log(err);

@@ -7,7 +7,7 @@
   
     <!-- tabla de productos -->
     <h1>{{titleService}}</h1>
-    <table class="table table-striped">
+    <table class="table table-striped" *ngIf="show">
       <thead>
         <tr>
           <th scope="col">Periodo</th>
@@ -28,7 +28,7 @@
   </div>
   
   <!-- carrito -->
-  <div class="container m-5">
+  <div class="container m-5" *ngIf="carrito">
     <h2>Carrito de compras</h2>
     <table mat-table [dataSource]="dataSource" class="table">
   
