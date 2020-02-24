@@ -1,3 +1,9 @@
 h1 {
     color: darkorange;
 }
+
+h2 {
+    color: darkorange;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

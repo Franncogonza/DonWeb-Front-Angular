@@ -8,15 +8,17 @@ import { BaseService } from 'src/app/service/base.service';
   styleUrls: ['./carrito.component.css']
 })
 export class CarritoComponent implements OnInit {
-
   title = 'DonWebCarrito';
   titleService = '';
   planes: any;
   periodos: any;
+
+  //table
   dataSource = new MatTableDataSource();
   renglonesTabla: any[] = [];
   displayedColumns: string[] = ['descripcion', 'plan', 'periodo', 'id', 'valor', 'delete'];
   json: any = [];
+
   hostingPlanName: any;
   hostingPLanPeriodo: any;
   webPlanName: any;
@@ -28,10 +30,12 @@ export class CarritoComponent implements OnInit {
   hostingPlan: any;
   product: any;
   idProduct: any;
-  arrayProducts: any []; 
+  arrayProducts: any[];
   cartProduct: any;
   productData: any;
   deleteProd: any;
+  
+  //muestra o oculta las tablas
   show: boolean = false;
   carrito: boolean = false;
 
@@ -149,7 +153,7 @@ export class CarritoComponent implements OnInit {
       duration: 3000,
     });
   }
-
+  
 }
 
 

@@ -1,12 +1,12 @@
-<div class="container flex m-4">
-    <h1 class="text-center"><strong>{{ title }}</strong></h1>
+<div class="container flex m-4 text-center">
+    <h1><strong>{{ title }}</strong></h1>
     <h4 class="mt-4">¿NECESITAS UNA PÁGINA WEB
       O UN HOSTING?</h4>
     <button (click)="getHosting()" mat-raised-button color="primary" class="m-3">Web Hosting</button>
-    <button (click)="getWeb()" class="btn btn-warning">Página Web</button>
-  
+    <button (click)="getWeb()" class="btn btn-warning m-3">Página Web</button>
+
     <!-- tabla de productos -->
-    <h1>{{titleService}}</h1>
+    <h2>{{titleService}}</h2>
     <table class="table table-striped" *ngIf="show">
       <thead>
         <tr>
@@ -28,8 +28,8 @@
   </div>
   
   <!-- carrito -->
-  <div class="container m-5" *ngIf="carrito">
-    <h2>Carrito de compras</h2>
+  <div class="container m-5 text-center" *ngIf="carrito">
+    <h3>Carrito de compras</h3>
     <table mat-table [dataSource]="dataSource" class="table">
   
       <!-- descripcion Column -->
