@@ -68,7 +68,7 @@ header {
 }
 
 section {
-    padding: 5em 0;
+    padding: 4em 0;
 }
 
 footer {
@@ -148,7 +148,8 @@ footer {
 }
 
 .footer-blue{
-    position: relative; height: 450px;
+    position: relative; 
+    height: 450px;
 }
 
 /* mobile =============================================================================================================================================== 
@@ -312,6 +313,11 @@ height: auto;
 margin: 10.3% auto;
 }
 
+.footer-blue {
+  position: relative;
+  height: 300px;
+}
+
 /* Animations */
 /* section,footer, .LogoGoogleNegocio {
     animation-duration: 2.8s;
@@ -370,6 +376,11 @@ margin: 10.3% auto;
     width: 24%;
     z-index: 4;
 } 
+
+.footer-blue{
+  position: relative; 
+  height: 373px;
+}
 }
 
 @media (max-width: 1797px) and (min-width: 768  px) { 
@@ -381,6 +392,7 @@ margin: 10.3% auto;
     z-index: 2;
     height: 115%;
 }
+
 }
 
 @media (max-width: 425px){ 
